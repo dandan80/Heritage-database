@@ -1,0 +1,32 @@
+a. Introduction / Abstract of database
+This database is based on the world heritages sites. In this database, the heritage is located in different countries, and the countries is located in different continent.  The database also categorizes each heritage in detail according to their theme and characteristics. Meanwhile, each heritage has their ref number and property to describe their details. 
+
+b. Business rules:
+Country:
+1. Each Country is unique, and each country can have at least one heritage.
+2. Each Country belongs to a continent.
+Continent:
+3. Each continent is unique, and it can have more than one country. 
+Heritage_Category:
+4. Each heritage category is unique, and it is given by UNESCO. 
+5. Each heritage category can be used for more than one heritage.
+Themes:
+6. Each theme is unique, and it is given by UNESCO.
+7. Each theme can be used for more than one heritage.
+Heritage:
+8. Each Heritage must have a name and the name is unique.
+9. Each Heritage must have a ref number (Heritage_Ref) and the ref number is given by UNESCO. It is unique for each Heritage.
+10. Each heritage must be located in a country, and it can only have one CountryID.
+11. Each heritage has the property to describe the size of it, and the number type is float.
+12. Each heritage can only have one themes and category.
+
+c.  Logical ER Diagram made using PgModeler.
+ 
+
+d. Create at least 5 entities, not including associative entities
+5 entities:
+1.Heritage_Category_T
+2. Continent_T
+3. Country_T
+4. Themes_T
+5. Heritage_T
